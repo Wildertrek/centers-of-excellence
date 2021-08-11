@@ -25,7 +25,7 @@ RUN chgrp -R 0 /app && \
     chmod +x /app/serve
 
 WORKDIR /app
-EXPOSE 4000
+EXPOSE 8080
 
 # The ENTRYPOINT is what ends up requiring `anyuid` or `privledged` container SCC:
 # ENTRYPOINT ["ruby", "/app/docker_entrypoint.rb"]
